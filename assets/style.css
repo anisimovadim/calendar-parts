@@ -81,10 +81,11 @@ ul{
  }
 
 
-.containareAut{
+.containareAutr{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .contentAutorizate{
     padding: 40px;
