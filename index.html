@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="containare containareAut">
+      <div class="content contentAutorizate">
+        <div class="logoAut">
+          <img src="assets/img/logo.svg" alt="Логотип">
+        </div>
+        <form action="" method="post" class="formAut">
+          <input type="text" placeholder="Логин">
+            <div class="psw">
+                <input type="password" placeholder="Пароль" class="" id="pswrd">
+                <a id="eye" class="close "></a>
+                <script>
+                    let eye = document.getElementById("eye");
+                    let passw =  document.getElementById("pswrd")
+                    eye.onclick = function (){
+                        eye.classList.toggle("open");
+                        if (passw.getAttribute('type') === 'password'){
+                            passw.setAttribute('type', 'text')
+                        }else {
+                            passw.setAttribute('type', 'password')
+                        }
+
+
+                    };
+                </script>
+            </div>
+
+          <p>Забыли пароль</p>
+            <a href="main.html" class="input">Войти</a>
+          <input type="button" value="Регистрация">
+        </form>
+        <div class="footer"></div>
+      </div>
+    </div>
+</body>
+</html>

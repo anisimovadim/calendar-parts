@@ -1,0 +1,180 @@
+.calendar-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+.Calendar{
+    margin-top: 200px;
+}
+.Calendar h1{
+    text-align: center;
+}
+.party-list-for-date{
+    width: 100%;
+}
+.party-list-for-date ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.party-list-for-date ul li{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.party-list-for-date ul li:hover div:nth-child(2){
+    outline: 2px solid #346D0A;
+    transition: .1s;
+}
+.party-list-for-date ul li div:nth-child(2){
+    transition: .1s;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 92px -11px rgba(0, 0, 0, 0.06);
+    border-radius: 13px;
+    height: 150px;
+}
+
+/*Основные настройки календаря*/
+.calendar-wrapper {
+    width: 70%;
+    height: 100%;
+    margin: 3em auto;
+    padding: 2em;
+    border: 1px solid #dcdcff;
+    border-radius: 5px;
+    background: #fff;
+}
+table {
+    clear: both;
+    width: 100%;
+    border-radius: 3px;
+    border-collapse: collapse;
+    color: #444;
+}
+td {
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    width: 15%;
+    transition: .6s all;
+    cursor: default;
+}
+td.today:hover,.normal:hover,.not-current:hover{
+    background-color: #346D0A;
+    color: white;
+    transition: .6s;
+    border-radius: 10px;
+}
+td.today {
+    font-weight: 700;
+    color: #28283b;
+    font-size: 1.5em;
+}
+thead td {
+    border: none;
+    color: #28283b;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+#btnPrev {
+    float: left;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+    background: none;
+    background-image: url("./img/arrowLeft.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+#btnPrev:before {
+    padding-right: 4px;
+}
+.lineCalend{
+    height: 1px;
+    margin-top: 20px;
+}
+#btnNext {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-bottom: 20px;
+    background: none;
+    background-image: url("./img/arrowRight.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+#btnNext:after {
+
+    padding-left: 4px;
+}
+footer{
+    margin-top: 100px;
+}
+
+/*Медиа запросы*/
+
+@media screen and (max-width: 1000px){
+    .calendar-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .calendar-wrapper {
+        width: 90%;
+    }
+    .party-list-for-date ul li div:nth-child(2) {
+        transition: .1s;
+        width: 100%;
+        margin: auto;
+        padding: 30px;
+        background-color: white;
+        box-shadow: 0px 0px 92px -11px rgb(0 0 0 / 6%);
+        border-radius: 13px;
+        height: 150px;
+    }
+    .party-list-for-date ul li {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .party-list-for-date ul li {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    td {
+        height: 73px;
+        text-align: center;
+        vertical-align: middle;
+        border: none;
+        width: 15%;
+        transition: .6s all;
+        cursor: default;
+        font-size: 3vw;
+    }
+    td.today{
+        font-size: 3.3vw;
+    }
+    thead td {
+        border: none;
+        color: #28283b;
+        text-transform: uppercase;
+        font-size: 3vw;
+    }
+    .party-list-for-date ul li {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        font-size: 2vw;
+    }
+}

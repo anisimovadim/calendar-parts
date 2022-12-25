@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.account.css">
+</head>
+<body>
+<div class="containare">
+    <header>
+        <div class="content header">
+            <ul class="close_nav" id="navContent">
+                <li><a href="main.html#next">Предстоящие</a></li>
+                <li><a href="main.html#last">Прошедшие</a></li>
+                <li><a href="calendar.html">Календарь</a></li>
+            </ul>
+            <div class="nav-block" id="poloski">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="main.html" class="profile">
+                <img src="assets/img/userICON.svg" alt="">
+                <p>Профиль</p>
+            </a>
+        </div>
+    </header>
+    <div class="content contAccout">
+        <div class="block-img-user">
+            <div class="img">ФОТО</div>
+            <div class="line lime"></div>
+            <input type="submit" value="Выход" class="sumbit-metka">
+        </div>
+        <div class="block-info-user">
+            <div class="block-txt-info-user">
+                <input readonly placeholder="Фамилия" id="last-name">
+                <label for="last-name">Иванов</label>
+            </div>
+            <div class="block-txt-info-user">
+                <input readonly placeholder="Имя" id="name">
+                <label for="name">Иван</label>
+            </div>
+            <div class="block-txt-info-user">
+                <input readonly placeholder="Отчество" id="sutname">
+                <label for="sutname">Иванович</label>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="block-add-parts">
+    <div class="main-block-add">
+        <img src="assets/img/plus.svg">
+    </div>
+    <div class="shadow"></div>
+</div>
+<script src="assets/navigation.js"></script>
+</body>
+</html>
