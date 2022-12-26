@@ -78,3 +78,61 @@ label{
      background: rgba(0, 0, 0, 0.53);
      filter: blur(5px);
  }
+
+ @media screen and (max-width: 1126px){
+     .content {
+         width: 88%;
+         margin: 200px auto;
+
+     }
+     .contAccout{
+         flex-direction: column;
+     }
+     .block-info-user {
+         background-color: white;
+         border-radius: 6px;
+         padding: 50px;
+         width: 72%;
+     }
+     .block-add-parts {
+         FONT-VARIANT: JIS04;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-end;
+         position: absolute;
+         bottom: 0;
+         left: 10%;
+     }
+     .sumbit-metka {
+         background-color: #346D0A;
+         border: none;
+         color: white;
+         font-size: 1.8vw;
+         margin-bottom: 90px;
+     }
+     .block-img-user .img {
+         width: 20vw;
+         height: 20vw;
+         background-color: #efefef;
+         border-radius: 50%;
+         border: 10px solid #346D0A;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 3vw;
+         color: #b2b2b2;
+     }
+     .main-block-add {
+         width: 100px;
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: white;
+         padding: 10px;
+         border: #346D0A 5px solid;
+         border-radius: 50%;
+     }
+
+ }
