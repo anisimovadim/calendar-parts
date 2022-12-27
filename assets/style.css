@@ -376,6 +376,27 @@ footer{
     }
 }
 @media screen and (max-width: 1000px){
+    input {
+        height: 97px;
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 3.7619px solid #346D0A;
+        border-radius: 7.52381px;
+        outline: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 39px;
+    }
+    .block-info-user {
+        background-color: white;
+        border-radius: 6px;
+        padding: 50px;
+        width: 100%;
+    }
+
     .box {
         width: 100%;
         display: flex;
